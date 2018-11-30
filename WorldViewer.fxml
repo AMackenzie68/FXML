@@ -40,7 +40,7 @@
             <Button fx:id="LeftButton" layoutX="33.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressLeftButton" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Left" />
             <Button fx:id="ForwardButton" layoutX="106.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressForwardButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Forward" />
             <Button fx:id="RightButton" layoutX="193.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressRightButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Right" />
-            <Label layoutX="315.0" layoutY="24.0" style="-fx-text-fill: #EDB88B;" text="Items:">
+            <Label layoutX="265.0" layoutY="24.0" style="-fx-text-fill: #EDB88B;" text="Items:">
                <font>
                   <Font size="19.0" />
                </font>
