@@ -10,12 +10,11 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
-  <children>
-      <MenuBar style="-fx-background-color: #FFE0B5;">
+<AnchorPane prefHeight="375.0" prefWidth="421.0" style="-fx-background-color: #202135;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar layoutX="-4.0" layoutY="-1.0" prefHeight="28.0" prefWidth="425.0" style="-fx-background-color: #FFE0B5;">
         <menus>
           <Menu mnemonicParsing="false" text="Options">
                <items>
@@ -24,32 +23,28 @@
           </Menu>
         </menus>
       </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="375.0" prefWidth="442.0" style="-fx-background-color: #202135;" VBox.vgrow="ALWAYS">
-      <children>
-            <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="205.0" layoutX="33.0" layoutY="128.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../download.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="33.0" layoutY="24.0" style="-fx-text-fill: #EDB88B;" text="Location: ">
-               <font>
-                  <Font size="19.0" />
-               </font>
-            </Label>
-            <TextField fx:id="MessageField" layoutX="33.0" layoutY="52.0" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #FFE0B5;" />
-            <Button fx:id="LeftButton" layoutX="33.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressLeftButton" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Left" />
-            <Button fx:id="ForwardButton" layoutX="106.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressForwardButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Forward" />
-            <Button fx:id="RightButton" layoutX="193.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressRightButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Right" />
-            <Label layoutX="265.0" layoutY="24.0" style="-fx-text-fill: #EDB88B;" text="Items:">
-               <font>
-                  <Font size="19.0" />
-               </font>
-            </Label>
-            <ChoiceBox fx:id="ItemsCarried" layoutX="265.0" layoutY="52.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FFE0B5;" />
-            <Button fx:id="PutDownButton" layoutX="272.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Put Down" />
-            <ImageView fx:id="itemView" fitHeight="119.0" fitWidth="119.0" layoutX="284.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
-            <Button fx:id="PickUpButton" layoutX="343.0" layoutY="303.0" mnemonicParsing="false" onAction="#pressPickUpButton" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Pick Up" />
-      </children>
-    </AnchorPane>
-  </children>
-</VBox>
+      <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="205.0" layoutX="25.0" layoutY="128.0" pickOnBounds="true">
+         <image>
+            <Image url="@../download.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="46.0" style="-fx-text-fill: #EDB88B;" text="Location: ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="MessageField" layoutX="25.0" layoutY="74.0" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: #FFE0B5;" />
+      <Button fx:id="LeftButton" layoutX="25.0" layoutY="317.0" mnemonicParsing="false" onAction="#pressLeftButton" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Left" />
+      <Button fx:id="ForwardButton" layoutX="98.0" layoutY="317.0" mnemonicParsing="false" onAction="#pressForwardButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Forward" />
+      <Button fx:id="RightButton" layoutX="185.0" layoutY="317.0" mnemonicParsing="false" onAction="#pressRightButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Right" />
+      <Label layoutX="258.0" layoutY="46.0" style="-fx-text-fill: #EDB88B;" text="Items:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ItemsCarried" layoutX="258.0" layoutY="74.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FFE0B5;" />
+      <Button fx:id="PutDownButton" layoutX="258.0" layoutY="317.0" mnemonicParsing="false" onAction="#pressButton" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Put Down" />
+      <ImageView fx:id="itemView" fitHeight="119.0" fitWidth="119.0" layoutX="274.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="PickUpButton" layoutX="340.0" layoutY="317.0" mnemonicParsing="false" onAction="#pressPickUpButton" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #17BEBB; -fx-text-fill: #49392c;" text="Pick Up" />
+   </children>
+</AnchorPane>
