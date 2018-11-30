@@ -7,7 +7,6 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -23,11 +22,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="205.0" layoutX="25.0" layoutY="128.0" pickOnBounds="true">
-         <image>
-            <Image url="@../download.png" />
-         </image>
-      </ImageView>
+      <ImageView fx:id="imageView" fitHeight="119.0" fitWidth="205.0" layoutX="25.0" layoutY="128.0" pickOnBounds="true" />
       <Label layoutX="25.0" layoutY="46.0" style="-fx-text-fill: #EDB88B;" text="Location: ">
          <font>
             <Font size="19.0" />
